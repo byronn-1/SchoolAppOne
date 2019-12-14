@@ -45,6 +45,9 @@ namespace SchoolFormsApp
                 MessageBox.Show(ex.Message);
             }
             MessageBox.Show(testSchool.ToString());
+
+            var teacher = new Teacher();
+
         }
 
         private void textZip_TextChanged(object sender, EventArgs e)
