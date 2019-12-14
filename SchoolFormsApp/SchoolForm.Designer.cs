@@ -43,6 +43,8 @@
             this.btnPushtoTest = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textZip = new System.Windows.Forms.TextBox();
+            this.btnTestTeacher = new System.Windows.Forms.Button();
+            this.btnTestStudent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -144,7 +146,7 @@
             // 
             // btnPushtoTest
             // 
-            this.btnPushtoTest.Location = new System.Drawing.Point(343, 865);
+            this.btnPushtoTest.Location = new System.Drawing.Point(787, 863);
             this.btnPushtoTest.Name = "btnPushtoTest";
             this.btnPushtoTest.Size = new System.Drawing.Size(306, 92);
             this.btnPushtoTest.TabIndex = 13;
@@ -169,11 +171,33 @@
             this.textZip.TabIndex = 15;
             this.textZip.TextChanged += new System.EventHandler(this.textZip_TextChanged);
             // 
+            // btnTestTeacher
+            // 
+            this.btnTestTeacher.Location = new System.Drawing.Point(69, 863);
+            this.btnTestTeacher.Name = "btnTestTeacher";
+            this.btnTestTeacher.Size = new System.Drawing.Size(227, 91);
+            this.btnTestTeacher.TabIndex = 16;
+            this.btnTestTeacher.Text = "Test Teacher";
+            this.btnTestTeacher.UseVisualStyleBackColor = true;
+            this.btnTestTeacher.Click += new System.EventHandler(this.btnTestTeacher_Click);
+            // 
+            // btnTestStudent
+            // 
+            this.btnTestStudent.Location = new System.Drawing.Point(341, 863);
+            this.btnTestStudent.Name = "btnTestStudent";
+            this.btnTestStudent.Size = new System.Drawing.Size(226, 91);
+            this.btnTestStudent.TabIndex = 17;
+            this.btnTestStudent.Text = "Test Student";
+            this.btnTestStudent.UseVisualStyleBackColor = true;
+            this.btnTestStudent.Click += new System.EventHandler(this.btnTestStudent_Click);
+            // 
             // SchoolForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 989);
+            this.Controls.Add(this.btnTestStudent);
+            this.Controls.Add(this.btnTestTeacher);
             this.Controls.Add(this.textZip);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnPushtoTest);
@@ -214,6 +238,8 @@
         private System.Windows.Forms.Button btnPushtoTest;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textZip;
+        private System.Windows.Forms.Button btnTestTeacher;
+        private System.Windows.Forms.Button btnTestStudent;
     }
 }
 
